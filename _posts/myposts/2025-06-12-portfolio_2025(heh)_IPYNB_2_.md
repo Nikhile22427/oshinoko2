@@ -1,7 +1,12 @@
 ---
-
+layout: post
+title: Final review
+description: Trimester 3 final 
+type: collab
+comments: false
+permalink: /csse/documentation3
 ---
-
+# Stuff I did this trimester
 ..definitely not nothing...
 
 ### A small overview of my role in the team
@@ -31,9 +36,8 @@
 
 ## The Words
 
-you wanted us to learn...
+you wanted us to learn... <br>
 
-## Programming Concepts and Definitions<br>
 <b>Software Engineering Practices</b><br>
 Planning changes - Systematically analyzing and documenting modifications before implementation<br>
 Checklists - Standardized lists of tasks or requirements to ensure consistency and completeness<br>
@@ -85,7 +89,16 @@ FSMs in Game - Finite State Machines used to manage game states and transitions<
 Inheritance - Mechanism allowing classes to inherit properties and methods from parent classes<br>
 
 ## Reflection
-- 
+- This class teaches skills that are applicable anywhere where you work with computers or code
+- Also teaches collaboration skills
+- I learned how to control my anger (at computers)
+- I learned how to effectively work with other people to maximize working power and minimize downtime and faffing around
+
+## Analytics
+here are the number of commits I have made over the class and the number of lines I have changed:<br>
+![analytics](analytics.png)
+well... I probably could have inflated this number by committing more...<br>
+I think I went a week without committing once and lost all my progress...
 
 ## Unrelated things
 

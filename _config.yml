@@ -5,7 +5,7 @@ github_username: Nikhile22427
 github_repo: "oshinoko2" 
 baseurl: "/oshinoko2"
 future: true
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: jekyll/minima
 minima:
   nav_pages:
     - navigation/blog.md

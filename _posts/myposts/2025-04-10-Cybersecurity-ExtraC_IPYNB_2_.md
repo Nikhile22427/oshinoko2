@@ -124,6 +124,11 @@ this.classes = [
 ```
 instances of the objectsin the level
 
+## N@TM Stuff
+- We showcased our end level and the platformer level attached
+- Reception was good but some people gave feedback to make more levels
+- 2 students said it was "good for CSSE," but the level is either good or bad. Theres no "good for ___" 
+
 ## Reflection
 - This class teaches skills that are applicable anywhere where you work with computers or code
 - Also teaches collaboration skills

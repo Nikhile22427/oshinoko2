@@ -5,7 +5,7 @@ github_username: Nikhile22427
 github_repo: "oshinoko2" 
 baseurl: "/oshinoko2"
 future: true
-remote_theme: jekyll/minima
+remote_theme: pages-themes/cayman@v0.2.0
 minima:
   nav_pages:
     - navigation/blog.md
@@ -14,7 +14,7 @@ minima:
     - README4YML.md
   skin: dark
 # remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
 # remote_theme: pages-themes/time-machine@v0.2.0

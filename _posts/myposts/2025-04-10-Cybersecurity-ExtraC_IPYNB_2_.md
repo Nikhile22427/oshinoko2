@@ -104,10 +104,12 @@ const sprite_data_endship = {
         zIndex: 10,  // Same z-index as player
         dialogues: [
 ```
+key value pairs n stuff
 
 ```javascript
 class Player extends Character {
 ```
+inheritance
 
 ```javascript
 this.classes = [
@@ -120,6 +122,7 @@ this.classes = [
       { class: Enemy, data: sprite_data_enemy }
     ];
 ```
+instances of the objectsin the level
 
 ## Reflection
 - This class teaches skills that are applicable anywhere where you work with computers or code

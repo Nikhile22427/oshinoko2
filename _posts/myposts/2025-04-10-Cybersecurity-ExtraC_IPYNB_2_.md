@@ -1,211 +1,402 @@
 ---
 layout: post
-title: Retrospective
-description: CSSE 1 Retrospective final
+title: THE FINALS
+description: CSSE 2 Final
 type: collab
 comments: false
 permalink: /csse/CyberPanel
 ---
 
-# Takeaways
+# Stuff I did this trimester
+..definitely not nothing...
 
-1) If you want to do this in the future, get a degree in IT as it gives you the basic understanding of this stuff (think taking an anatomy class before going to med school)
-<br>
-2) Anyone can learn this really easily - even if you hate computers you could like this
-<br>
-3) Figure out how to use AI - it's indispensable and will shape the computer related fields in the future
-<br>
-4) Start small - you don't need to pay for classes or lectures to get started, there are free courses online, and the barrier for entry is very very low
-<br>
-5) You don't lose anything by trying, you only lose by not trying
-<br>
-<img src="/images/IMG_0660.JPG">
+### A small overview of my role in the team
+- Lead morale increaser
+- Documenter
+- Bugfixer
+- Lead artist (background)
 
-# Everything below this is notes 
+## Two Player
 
-# Panelists
-- David Tomasz -FBI
-	- Tracked down big hackers from other countries 
-- Tricia Mercer - Leadership position at SD Cyber excellence and more
-	- Stopped data leak and people stealing data from company
-- Victor Nzeata - CEO of Cyber Brain Academy
-	- Cleaned up old data from the US military in the middle east to stop the enemy from using it
+- created 1st and 2nd versions of the final fix that enabled two player
+- setup sprites for use
 
-# Cybersecurity Landscape
+## Documentation
 
-## stuff they did
+- I was on the "notebook creating" sub-team
+- Assisted Jim in creating lesson notebooks for our API and two-player lessons
+- Created documentation of our changes to the adventure game using <b><i>Tailwind CSS<i><b>
 
-D: Tracked down big hackers from other countries 
+## Debugging
 
-T: Stopped data leak and people stealing data from company
+- Debugging is something that nobody wants to do
+- And so naturally I learned how to interpret these alien error messages
+- I eventually found it easier to look at the errors, use the debugger, and comb through files myself rather than ask any LLM
 
-V: Cleaned up old data from the US millitary in the middle east to stop the enemy from using it
+- However, I still have much to learn (this breakpoint stuff confuses me)
 
-## big threats
+## The Words
 
-T: Lack of cybersecurity knowledge 
+you wanted us to learn... <br>
 
-D: Ransomware
+<b>Software Engineering Practices</b><br>
+Planning changes - Systematically analyzing and documenting modifications before implementation<br>
+Checklists - Standardized lists of tasks or requirements to ensure consistency and completeness<br>
+Burndowns - Visual charts tracking work completion over time in project management<br>
+Coding with comments - Writing explanatory text within code to document functionality and purpose<br>
+Building help documentation - Creating user guides and technical documentation for software systems<br>
+<b>Software Development Lifecycle Practices</b><br>
+Source control - Version management systems that track changes to code over time<br>
+Forking - Creating an independent copy of a repository to develop separately<br>
+Branching - Creating parallel development paths within a repository<br>
+Building - Compiling and assembling source code into executable applications<br>
+Testing and verification - Validating that software functions correctly and meets requirements<br>
+Pull requests - Formal requests to merge code changes from one branch to another<br>
+Merging/integrating - Combining code changes from different branches or contributors<br>
+Deployment - Publishing and installing software to production environments<br>
+<b>Retrospective Engineering Practices</b><br>
+Presentation - Formal demonstration of completed work to stakeholders<br>
+Live reviews - Real-time examination and discussion of code or systems<br>
+Demos - Interactive demonstrations of software functionality<br>
+Code reviews - Systematic examination of source code by peers for quality assurance<br>
+Revising plans - Updating project plans based on lessons learned and new requirements<br>
+<b>Data Types</b><br>
+Numbers - Numeric values including integers and floating-point numbers<br>
+Strings - Text data represented as sequences of characters<br>
+Booleans - True/false logical values<br>
+Arrays - Ordered collections of elements accessible by index<br>
+JSON objects - Data structures using JavaScript Object Notation for key-value pairs<br>
+<b>Operators</b><br>
+String operations - Functions for manipulating text (concatenation, substring, search)<br>
+Mathematical operations - Arithmetic functions like addition, subtraction, multiplication, division<br>
+Boolean expressions - Logical operations using AND, OR, NOT to evaluate true/false conditions<br>
+Control Structures<br>
+Iteration - Repeating code execution using loops (for, while, do-while)<br>
+Conditions - Executing code based on true/false evaluations (if/else statements)<br>
+Nested conditions - Conditional statements placed inside other conditional statements<br>
+<b>Classes</b><br>
+Writing classes - Defining blueprints for objects with properties and methods<br>
+Creating methods - Writing functions that belong to a class<br>
+Instantiating objects - Creating specific instances of a class<br>
+Using objects - Accessing and manipulating object properties and methods<br>
+Calling methods - Executing functions defined within an object<br>
+Parameters - Input values passed to functions or methods<br>
+Return values - Output values returned by functions or methods<br>
+<b>Coding Practices</b><br>
+SRP - Single Responsibility Principle: each class should have one reason to change<br>
+Object Literal - Creating objects using curly brace notation with key-value pairs<br>
+Object Instance - A specific occurrence of a class with its own property values<br>
+FSMs in Game - Finite State Machines used to manage game states and transitions<br>
+Inheritance - Mechanism allowing classes to inherit properties and methods from parent classes<br>
 
-V: AI 
+```javascript
+const sprite_data_endship = {
+        id: 'Endship',
+        greeting: sprite_greet_endship,
+        src: sprite_src_endship,
+        SCALE_FACTOR: 5,
+        ANIMATION_RATE: 1000000,
+        pixels: {height: 982, width: 900},
+        INIT_POSITION: { x: (width / 2), y: (height / 2) },
+        orientation: {rows: 1, columns: 1 },
+        down: {row: 0, start: 0, columns: 1 },
+        hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
+        zIndex: 10,  // Same z-index as player
+        dialogues: [
+```
 
-## Zero Day - Vulnerability that cannot be patched 
+```javascript
+class Player extends Character {
+```
+
+```javascript
+this.classes = [
+      { class: BackgroundParallax, data: image_data_parallax },  // Add parallax background first
+      { class: GamEnvBackground, data: image_data_end },         // Then regular background
+      { class: Player, data: sprite_data_chillguy },
+      { class: Npc, data: sprite_data_endship },
+      { class: Collectible, data: sprite_data_eye },
+      { class: Player, data: sprite_data_alex },
+      { class: Enemy, data: sprite_data_enemy }
+    ];
+```
+
+## Reflection
+- This class teaches skills that are applicable anywhere where you work with computers or code
+- Also teaches collaboration skills
+- I learned how to control my anger (at computers)
+- I learned how to effectively work with other people to maximize working power and minimize downtime and faffing around
+
+## Analytics
+here are the number of commits I have made over the class:<br>
+![analytics](analytics.png)
+well... I probably could have inflated this number by committing more...<br>
+I think I went a week without committing once and lost all my progress...
+
+## Unrelated things
+
+- Worked on a passion project not using JS
+- Used YOLO for object detection and wrote a python file that would interpret these detections and display them on the screen.
+- It would also display and output coordinates for use with some kind of grabbing apparatus (didn't get to this part b/c it would cost a lot to build a robot arm)
 
 
-## How do ethical hackers help and ethics concerns
+code below
 
-V: 
-- They are really useful because they simulate real attacks and that is critical for reinforcing weak points and strengthening. 
-- Gray area b/c in the DOD a ethical hacker patched vulnerabilities but put a backdoor in... 
 
-D:
-- Not really ethical/moral but more of a legal question
-- good penetration testers are really really useful 
-- come talk to us if you are good at this
+```python
+import cv2
+import torch
+import pyttsx3
+from vosk import Model, KaldiRecognizer
+import numpy as np
+import wave 
+from ultralytics import YOLO
+import pyaudio
+import json
+import time
 
-T:
-- Integrity is super important because they have access to critical data
+model_path = "/Users/evansvetina/Downloads/vosk-model-small-en-us-0.15"  # Update this path with your model directory
 
-## What inspired you to do cybersecurity?
+vosk_model = Model(model_path)
+recognizer = KaldiRecognizer(vosk_model, 16000)
 
-T:
-- Book called the cuckoo's egg (I HAVE READ THIS WOW)
+# Global variable to store detected objects between frames
+detected_objects = []
 
-D:
-- I hate computers. Always have. Still do
-- Really easy to learn. Everybody should know it
-- Went to Quantico and wanted to do something overseas. They suggested cyber and he took it
+def init_model():
+    """Initialize the YOLO model"""
+    try:
+        # Load the YOLOv5 model
+        model = YOLO('/Users/evansvetina/Downloads/best (1).pt')
+        model.conf = 0.25
+        model.iou = 0.45
+        return model
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        return None
 
-V:
-- Loves coding?
-- Saw parallels between military and cyber
-- loves that it's always changing and changing
+def init_camera():
+    """Initialize the camera"""
+    cap = cv2.VideoCapture(0)
+    if not cap.isOpened():
+        print("Error: Could not open webcam.")
+        return None
+    return cap
 
-## What should CS students interested in cyber do as next steps
+def listen_for_command():
+    """
+    Listen for voice command using Vosk
+    Listens for up to 3 seconds for a command
+    """
+    p = None
+    stream = None
+    try:
+        p = pyaudio.PyAudio()
+        
+        # List available input devices
+        info = p.get_host_api_info_by_index(0)
+        numdevices = info.get('deviceCount')
+        
+        # Find the first available input device
+        input_device_index = None
+        for i in range(numdevices):
+            if p.get_device_info_by_host_api_device_index(0, i).get('maxInputChannels') > 0:
+                input_device_index = i
+                break
+        
+        if input_device_index is None:
+            print("No input devices found!")
+            return None
+            
+        # Configure and open stream with specific device
+        stream = p.open(
+            format=pyaudio.paInt16,
+            channels=1,
+            rate=16000,
+            input=True,
+            input_device_index=input_device_index,
+            frames_per_buffer=4096
+        )
+        
+        stream.start_stream()
+        
+        # Set maximum listening time to 3 seconds
+        start_time = time.time()
+        max_listen_time = 3  # Listen for up to 3 seconds
+        
+        try:
+            while time.time() - start_time < max_listen_time:
+                data = stream.read(4096, exception_on_overflow=False)
+                
+                if recognizer.AcceptWaveform(data):
+                    result_json = recognizer.Result()
+                    # Parse the JSON string and extract the text
+                    result_dict = json.loads(result_json)
+                    result = result_dict.get('text', '')
+                    if result:  # Only return if we got an actual command
+                        return result
+            
+            # If we reach here, we didn't get a command in the time allotted
+            return None
+                    
+        except Exception as e:
+            print(f"Error recording audio: {e}")
+            return None
+            
+    except Exception as e:
+        print(f"Error initializing audio: {e}")
+        return None
+    finally:
+        if stream is not None and stream.is_active():
+            stream.stop_stream()
+            stream.close()
+        if p is not None:
+            p.terminate()
+        
+        
+def process_frame(frame, model):
+    """Process a single frame with object detection"""
+    global detected_objects  # Make this a global variable to persist between frames
+    
+    # Only reset the detected objects list if new objects are found
+    current_detected_objects = []
+    
+    try:
+        # Check if model is None
+        if model is None:
+            return frame, detected_objects
+            
+        # Perform inference
+        results = model(frame, verbose=False)
+        
+        # Process detections
+        for r in results:
+            boxes = r.boxes
+            for box in boxes:
+                # Get box coordinates
+                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
+                
+                # Calculate center
+                center_x = (x1 + x2) // 2
+                center_y = (y1 + y2) // 2
+                
+                # Draw bounding box (green)
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                
+                # Draw center point (red)
+                cv2.circle(frame, (center_x, center_y), 5, (0, 0, 255), -1)
+                
+                # Add labels
+                conf = float(box.conf[0])
+                cls = int(box.cls[0])
+                class_name = model.names[cls]
+                label = f"{class_name} {conf:.2f}"
+                
+                # Store the detected object
+                current_detected_objects.append({
+                    'class': class_name,
+                    'center': (center_x, center_y),
+                    'confidence': conf  
+                })
+                
+                # Draw label (white)
+                cv2.putText(frame, label, (x1, y1 - 10), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+                
+                # Draw center coordinates (yellow)
+                center_text = f"({center_x}, {center_y})"
+                cv2.putText(frame, center_text, (center_x + 10, center_y - 10), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+        
+        # Only update detected_objects if we found objects
+        if current_detected_objects:
+            detected_objects = current_detected_objects
+        
+        return frame, detected_objects
+    except Exception as e:
+        return frame, detected_objects  # Return the frame and empty list
 
-V:
-- do background in IT 
-- Very foundation of CS and cyber can be found there
-- bachelor in IT 
 
-D: 
-- also do IT if you plan
-- have soft skills - Will take you basically anywhere
-	- people skills
-	- be nice
-	- be a leader
-	- be reliable
-	- when you walk into a room people should know you and like you
-	- need to learn how to manage bad / unskilled people 
+# Initialize model
+model = init_model()
 
-T: 
-- Yes.
-- Having a background in IT 
-	- really gives you the essentials
-	- can't do heart surgery without understanding basic anatomy
-- Start building things at home - make a network, hack it, etc... real world stuff
+# Initialize camera
+cap = init_camera()
 
-# Career Opportunities
+# Initialize the speech recognizer once to avoid reopening it repeatedly
 
-## Obstacles you have faced and how it impacts career
+   
+# Use time-based intervals instead of frame-based intervals
+import time
+last_voice_check_time = time.time()
+VOICE_CHECK_INTERVAL_SECONDS = 5  # Check for voice commands every 5 seconds
 
-T: 
-- I'm more on the business side
-- speaking with business acumen
-	- convincing the higher ups how to do things
-	- "how does it make me money?" - leaders
-	- dumb it down so they understand why its necessary and why they should invest
-- How do you take what you know 
 
-D: 
-- My personal challenge was being ignorant and having to overcome it
-- there's going to be a steep learning curve. A lot of times
-- Companies won't share data with us
-- People wont report to law enforcement
+try:
+    while True:
+        # Read frame
+        ret, frame = cap.read()
+        if not ret:
+            break
+            
+        # Process frame
+        processed_frame, detected_objects = process_frame(frame, model)
 
-V:
-- People.
-- Have to pick the top 5, have to ask people to do things that are really important
-- BCP?
-- When you are faced with adversarial danger (country stuff), how do i get stuff done with just 1/5 of my staff?
+        # Display frame
+        cv2.imshow('YOLOv5 Object Detection', processed_frame)
 
-# Future of Cybersecurity
+        # Check for voice commands every 5 seconds
+        current_time = time.time()
+        if current_time - last_voice_check_time >= VOICE_CHECK_INTERVAL_SECONDS:
+            last_voice_check_time = current_time
+            
+            # Check for voice commands
+            command = listen_for_command()
+            
+            # Process command if we got one
+            if command:
+                found_match = False
+                # Convert command to lowercase for case-insensitive comparison
+                command_lower = command.lower().strip()
+                
+                # Try a more flexible matching approach
+                for obj in detected_objects:
+                    # Get the object class and make it lowercase
+                    obj_class = obj['class'].lower().strip()
+                    
+                    # Check for partial matches in either direction
+                    if (command_lower in obj_class) or (obj_class in command_lower) or \
+                       ('bandage' in command_lower and 'bandage' in obj_class) or \
+                       ('scissor' in command_lower and 'scissor' in obj_class):
+                        
+                        # Format the center coordinates as x,y,z with y always 0
+                        center_x, center_y = obj['center']
+                        print(f"{center_x},0,{center_y}")
+                        found_match = True
+                        break  # Exit after first match
+                
+                if not found_match:
+                    print(f"No matching object found for the command '{command}'.")
+        
+        # Process key presses
+        key = cv2.waitKey(1) & 0xFF
+        
+        # Check for quit command
+        if key == ord('q'):
+            break
 
-## What trends in Cyber are you anticipating for the next 5-10 years and how will it affect jobs
+except Exception as e:
+    pass
 
-V:
-- lot more specializations
-	- Health IT
-	- Human element of risk
-	- Need more people specialized in AI
-- Have the same skillset of hackers but being able to also incorporate more organic stuff
-	-  For example, pacemaker that could be hacked
+finally:
+    # Clean up
+    if cap is not None:
+        cap.release()
+    cv2.destroyAllWindows()
+```
 
-D:
-- Echo AI.
-- Talked to a lot of companies / coders who are terrified of losing jobs
-- People are firing staff cuz of AI
-- Very bad time for coders who aren't good because AI is being trained on code
-- Govt jobs need skilled coders
+## Unrelated things 2
 
-T
-- Agree for AI.
-- Next 5-10 years almost every entity will be hiring for cybersecurity
-	-  small/medium companies beginning to think about that
-- Open field of learning how to secure code
-
-## How do cybersecurity professionals prepare for constantly evolving threats
-
-T
-- lot of sources that you can subscribe to
-- constantly being informed and up to date
-- not a profession that you can turn on/off outside 9-5
-- intrinsical need to want to research
-- just dig in
-
-D:
-- I do a lot of reading.
-- A lot of classified and unclassified stuff
-- You are going to need a network. Identify people who are really really good and become friends with them. They will teach you things, get you jobs, and will advance you
-- You can't go home and think you are done.
-
-V:
-- Brother who is a doctor
-	- always reading and learning
-- just as any other profession you have to maintain competency
-- being in the know - staying updated
-- Cybersecurity is a team sport.
-- Solve problems faster
-- community that you create by being in this workforce
-
-## Audience Q&A
-
-Q: How quickly does the pipeline go from research to action
-
-D: 
-- A lot of the novel exploits and techniques never get off the ground because it requires too much technical knowledge
-- When it does, it only takes hours or days for the exploit to be taken advantage of 
-V:
-- Patch Tuesday, Exploit Wednesday
-
-Q: How do you make sure that you are always up to date on new developments
-
-V:
-- Always go to conferences, partner meetings, share w/ other people and they will share w you (mostly)
-- Real world feedback
-
-D: 
-- I read the news.
-- Information sharing networks are very very dense.
-- By industry, by sector, govt private stuff
-
-## Cool Tools
-
-- Kali / Linux tools
-- NMap
-- TheHarvester
-- ISC2 -  Certified Cybersecurity - free
-- A+ cert
-- N+ cert
-- Security+ cert
-- 
+- gained appreciation for game devs (man this coding stuff is hard)
+- gained appreciation for artists (man this drawing stuff is hard)

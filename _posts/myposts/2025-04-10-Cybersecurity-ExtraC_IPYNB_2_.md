@@ -21,6 +21,10 @@ permalink: /csse/CyberPanel
 - created 1st and 2nd versions of the final fix that enabled two player
 - setup sprites for use
 
+## General Contributions
+- Worked on the core end level and basic gameplay
+- probably 1000+ lines of code changed
+
 ## Documentation
 
 - I was on the "notebook creating" sub-team
